@@ -4,7 +4,11 @@ import 'package:daftar_kehadiran/providers/kehadiran_provider.dart';
 import './screens/record_page.dart';
 import './screens/history_page.dart';
 
-void main() => runApp(MyApp());
+void main() async {
+   WidgetsFlutterBinding.ensureInitialized();
+  
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override
